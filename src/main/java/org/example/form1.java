@@ -10,13 +10,14 @@ public class form1 {
     private JButton ingresarButton;
     public JPanel mainPanel;
     private JLabel validar;
+    private JPasswordField passwordField1;
 
     public form1() {
         ingresarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String usuario = textField1.getText();
-                String passw = textField2.getText();
+                String passw = passwordField1.getText();
                 if(usuario.equals("Vargas") && passw.equals("Vargas123")){
                         validar.setText("INGRESO EXITOSO");
                 }
